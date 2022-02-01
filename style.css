@@ -16,7 +16,8 @@ body {
     ;
 }
 .pageTopInicio{
-    background-color: #82E08D;
+    /* background-color: #82E08D; */
+    background-image: linear-gradient(#82E08D,#D9F7AB );
     color: black;
     text-align: center;
     grid-area: cabecera;
