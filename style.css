@@ -271,6 +271,9 @@ ul {
 a {
     text-decoration: none;
 }
+.titulo{
+    transform:rotatex(180deg);
+}
 @media only screen and (min-width: 780px){
     .cuerpoInicio{
         height: 80%;
