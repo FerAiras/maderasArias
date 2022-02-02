@@ -16,11 +16,11 @@ body {
     ;
 }
 .pageTopInicio{
-    /* background-color: #82E08D; */
-    background-image: linear-gradient(#82E08D,#D9F7AB );
-    color: black;
+    background-color: #82E08D;
+   
+/*     color: black;
     text-align: center;
-    grid-area: cabecera;
+    grid-area: cabecera; */
 }
 .cuerpoInicio{
     height: 500px;
@@ -162,37 +162,14 @@ body {
     grid-area: cabeceraProductos;
 
 }
-.cuerpoProductos{
-    height: 80%;
-    width: 80%;
-    background-color: #E6DA6D;
-    padding: 5%;
-    margin-top: 10%;
-    margin-left: 2%;
-    grid-area: cuerpoProductos;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-}
+
 .pageBottonProductos{
     background-color: #82E08D;
     color: white;
     margin-top: 10%;
     grid-area: pieProductos;
 }
-.tablaProductos{
-    height: 70%;
-    width: 80%;
-    background-color: #FCDF6A;
-    font-size: 14px;
-    margin-top: 5%;
-    
-} 
-.encabezados{
-    background-color:#E6DA6D;
-    font-weight: 600;
-}
+
 
 /* css quienes */
 .bodyQuienes {
@@ -259,7 +236,8 @@ body {
      height: 40%;
      width: 60%; 
  }
-ul {
+ 
+ ul {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -271,9 +249,14 @@ ul {
 a {
     text-decoration: none;
 }
-.titulo{
-    transform:rotatex(180deg);
+.grillaProducto{
+   
+    margin: 2% 3% 2% 4%;
 }
+.filaTabla{
+    border:solid 1px black;
+}
+
 @media only screen and (min-width: 780px){
     .cuerpoInicio{
         height: 80%;
@@ -283,16 +266,16 @@ a {
         align-items:center;
     }
     .parrafoInicio{
-        height: 50%;
+        height: 70%;
         width: 40%;
     }
     .imagenTronco {
         height: 95%;
         width: 40%; 
     }
-    .pageTopInicio{
+/*     .pageTopInicio{
         margin-top: 0;
-    }
+    } */
     .pageBottonInicio{
             margin-top: 7%;
         }
@@ -338,15 +321,8 @@ a {
     .pageBottonOrganismos{
         margin-top: 5%;
     }
-    .cuerpoProductos{
-        height: 65%;
-        width: 80%;
-        margin-top: 2%;
-    }
-    .tablaProductos{
-        margin-top: 1%;
-        font-size: 24px;
-    }
+
+
     .pageBottonProductos{
         margin-top: 3%;
     }
