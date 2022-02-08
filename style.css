@@ -15,13 +15,7 @@ body {
     "pie"
     ;
 }
-.pageTopInicio{
-    background-color: #82E08D;
-   
-/*     color: black;
-    text-align: center;
-    grid-area: cabecera; */
-}
+
 .cuerpoInicio{
     height: 500px;
     width: 100%;
@@ -42,7 +36,7 @@ body {
     text-align:left;
     line-height: 40PX;
     font-style: italic;
-    color: white;
+    color: black;
     overflow-y: scroll;
  }
  .parrafoInicio::-webkit-scrollbar {
@@ -63,57 +57,48 @@ body {
 }
 .pageBottonInicio{
     background-color: #82E08D;
-    color: white;
     grid-area: pie;
 }
 /* css Contacto */
 .bodyContacto {
     display: grid;
     grid-template-areas: 
-    "cabeceraContacto"
+    "cabecera"
     "cuerpoContacto"
     "pieContacto"
     ;
 }
-.pageTopContacto{
-    background-color: #82E08D;
-    color: black;
-    text-align: center;
-    grid-area: cabeceraContacto;
-}
-.cuerpoContacto{
-    height: 95%;
-    width: 70%;
-    background-color: #E6DA6D;
-    padding: 5%;
-    margin-top: 5%;
-    margin-left: 15%;
+
+.cuerpoContactos{
+    height: 300%;
+    width: 90%;
+/*     background-color: #E6DA6D; */
+    padding: 1%;
+    margin-top: 3%;
+    margin-left: 2%;
     grid-area: cuerpoContacto;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
+
+
 }
 .pageBottonContacto{
     background-color: #82E08D;
-    color: white;
+/*     color: white; */
     grid-area: pieContacto;
 }
 /* css organismos */
 .bodyOrganismos {
     display: grid;
     grid-template-areas: 
-    "cabeceraOrganismos"
+    "cabecera"
     "cuerpoOrganismos"
     "pieOrganismos"
     ;
 }
-.pageTopOrganismos{
-    background-color: #82E08D;
-    color: black;
-    text-align: center;
-    grid-area: cabeceraOrganismos;
-}
+
 .cuerpoOrganismos{
     height: 90%;
     width: 80%;
@@ -150,17 +135,10 @@ body {
 .bodyProductos {
     display: grid;
     grid-template-areas: 
-    "cabeceraProductos"
+    "cabecera"
     "cuerpoProductos"
     "pieProductos"
     ;
-}
-.pageTopProductos{
-    background-color: #82E08D;
-    color: black;
-    text-align: center;
-    grid-area: cabeceraProductos;
-
 }
 
 .pageBottonProductos{
@@ -175,17 +153,14 @@ body {
 .bodyQuienes {
     display: grid;
     grid-template-areas: 
-    "cabeceraQuienes"
+    "cabecera"
     "cuerpoQuienes"
     "pieQuienes"
     ;
 }
-.pageTopQuienes{
+.pageTop{
     background-color: #82E08D;
-    color: black;
-    text-align: center;
-    grid-area: cabeceraQuienes;
-
+    grid-area: cabecera;
 }
 .cuerpoQuienes{
     height: 500px;
@@ -228,27 +203,31 @@ body {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid #E8E4BE;  /* creates padding around scroll thumb */
   }
-.marcar {
-    color: white;
-    font-style: italic;
-}
+
 .imagenAserradero {
      height: 40%;
      width: 60%; 
  }
  
- ul {
+ .listaRedes {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     align-items:center;
     list-style: none;
-    height: 5vh;
+/*     height: 5vh; */
     flex-wrap: wrap;
 }
-a {
-    text-decoration: none;
+footer ul li a {
+    color: black;
+    font-size: 20px;
+
+
 }
+/* a {
+    text-decoration: none;
+} */
+
 .grillaProducto{
    
     margin: 2% 3% 2% 4%;
@@ -256,7 +235,15 @@ a {
 .filaTabla{
     border:solid 1px black;
 }
-
+.bgVerde{
+    background-color: green;
+}
+.cBlanco {
+    color: white;
+}   
+.topContacto{
+    height: 23%;
+}
 @media only screen and (min-width: 780px){
     .cuerpoInicio{
         height: 80%;
@@ -277,8 +264,11 @@ a {
         margin-top: 0;
     } */
     .pageBottonInicio{
-            margin-top: 7%;
+        margin-top: 3%;
         }
+    .pageBottonContacto{
+        margin-top: 3%;
+     }
     .cuerpoQuienes{
         height: 300px;
         flex-direction: row;
@@ -296,16 +286,22 @@ a {
          height: 85%;
          width: 40%; 
      }
-    .pageTopQuienes{
+    .pageTop{
         margin-top: 0;
     }
-    .pageBottonQuienes{
-            margin-top: 7%;
-        }
-    .cuerpoContacto{
-        height: 90%;
-        width: 40%;
+    .topContacto{
+        height: 21%;
     }
+    .pageBottonQuienes{
+            margin-top: 3%;
+        }
+    .cuerpoContactos{
+        height: 300%;
+        width: 100%;
+
+    }
+     
+    
     .cuerpoOrganismos{
         margin-top: 2%;
         font-size: 20px;
@@ -325,5 +321,11 @@ a {
 
     .pageBottonProductos{
         margin-top: 3%;
+    }
+    footer ul li a {
+
+        font-size: 50px;
+    
+    
     }
 }
