@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #D9F7AB; }
+
+.listaRedes {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap; }
+
+footer ul li a {
+  color: black;
+  font-size: 20px; }
+
+@media only screen and (min-width: 780px) {
+  .pageTop {
+    margin-top: 0; }
+  footer ul li a {
+    font-size: 50px; } }
+
+.bodyInicio {
+  display: grid;
+  grid-template-areas: "cabecera" "cuerpoIn" "pie"; }
+
+.cuerpoInicio {
+  height: 500px;
+  width: 100%;
+  padding: 1%;
+  margin-top: 5%;
+  grid-area: cuerpoIn;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.parrafoInicio {
+  height: 40%;
+  width: 75%;
+  padding: 2%;
+  background-color: #E6DA6D;
+  font-size: 20px;
+  text-align: left;
+  line-height: 40PX;
+  font-style: italic;
+  color: black;
+  overflow-y: scroll; }
+
+.parrafoInicio::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */ }
+
+.parrafoInicio::-webkit-scrollbar-track {
+  background: #E6DA6D;
+  /* color of the tracking area */ }
+
+.parrafoInicio::-webkit-scrollbar-thumb {
+  background-color: #F2C866;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #E8E4BE;
+  /* creates padding around scroll thumb */ }
+
+.imagenTronco {
+  height: 40%;
+  width: 60%; }
+
+.pageBottonInicio {
+  background-color: #82E08D;
+  grid-area: pie; }
+
+@media only screen and (min-width: 780px) {
+  .cuerpoInicio {
+    height: 80%;
+    flex-direction: row;
+    margin-top: 2%;
+    justify-content: space-evenly;
+    align-items: center; }
+  .parrafoInicio {
+    height: 70%;
+    width: 40%; }
+  .imagenTronco {
+    height: 95%;
+    width: 40%; }
+  .pageBottonInicio {
+    margin-top: 3%; } }
+
+.bodyContacto {
+  display: grid;
+  grid-template-areas: "cabecera" "cuerpoContacto" "pieContacto"; }
+
+.cuerpoContactos {
+  height: 300%;
+  width: 90%;
+  padding: 1%;
+  margin-top: 3%;
+  margin-left: 2%;
+  grid-area: cuerpoContacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.pageBottonContacto {
+  background-color: #82E08D;
+  grid-area: pieContacto; }
+
+.topContacto {
+  height: 23%; }
+
+.cuerpoInicio {
+  height: 80%;
+  flex-direction: row;
+  margin-top: 2%;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.parrafoInicio {
+  height: 70%;
+  width: 40%; }
+
+.imagenTronco {
+  height: 95%;
+  width: 40%; }
+
+.pageBottonInicio {
+  margin-top: 3%; }
+
+@media only screen and (min-width: 780px) {
+  .pageBottonContacto {
+    margin-top: 3%; }
+  .topContacto {
+    height: 21%; }
+  .cuerpoContactos {
+    height: 300%;
+    width: 100%; } }
+
+.bodyOrganismos {
+  display: grid;
+  grid-template-areas: "cabecera" "cuerpoOrganismos" "pieOrganismos"; }
+
+.cuerpoOrganismos {
+  height: 90%;
+  width: 80%;
+  font-size: 16px;
+  background-color: #E6DA6D;
+  padding: 3%;
+  margin-top: 5%;
+  margin-left: 5%;
+  grid-area: cuerpoOrganismos;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.pageBottonOrganismos {
+  background-color: #82E08D;
+  color: white;
+  grid-area: pieOrganismos; }
+
+.organismo {
+  height: 80%;
+  width: 80%;
+  border-bottom: black;
+  background-color: #E8E4BE;
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.mapa {
+  display: none; }
+
+@media only screen and (min-width: 780px) {
+  .cuerpoOrganismos {
+    margin-top: 2%;
+    font-size: 20px; }
+  .organismo {
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .mapa {
+    display: flex; }
+  .pageBottonOrganismos {
+    margin-top: 5%; } }
+
+.bodyProductos {
+  display: grid;
+  grid-template-areas: "cabecera" "cuerpoProductos" "pieProductos"; }
+
+.pageBottonProductos {
+  background-color: #82E08D;
+  color: white;
+  margin-top: 10%;
+  grid-area: pieProductos; }
+
+.grillaProducto {
+  margin: 2% 3% 2% 4%; }
+
+.filaTabla {
+  border: solid 1px black; }
+
+.bgVerde {
+  background-color: green; }
+
+.cBlanco {
+  color: white; }
+
+@media only screen and (min-width: 780px) {
+  .pageBottonProductos {
+    margin-top: 3%; } }
+
+.bodyQuienes {
+  display: grid;
+  grid-template-areas: "cabecera" "cuerpoQuienes" "pieQuienes"; }
+
+.pageTop {
+  background-color: #82E08D;
+  grid-area: cabecera; }
+
+.cuerpoQuienes {
+  height: 500px;
+  width: 100%;
+  padding: 1%;
+  margin-top: 5%;
+  grid-area: cuerpoQuienes;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.pageBottonQuienes {
+  background-color: #82E08D;
+  color: white;
+  grid-area: pieQuienes; }
+
+.parrafoQuienes {
+  height: 40%;
+  width: 80%;
+  padding: 2%;
+  background-color: #E6DA6D;
+  font-size: 20px;
+  text-align: left;
+  line-height: 30PX;
+  font-style: italic;
+  color: black;
+  overflow-y: scroll; }
+
+.parrafoQuienes::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */ }
+
+.parrafoQuienes::-webkit-scrollbar-track {
+  background: #E8E4BE;
+  /* color of the tracking area */ }
+
+.parrafoQuienes::-webkit-scrollbar-thumb {
+  background-color: #F2C866;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #E8E4BE;
+  /* creates padding around scroll thumb */ }
+
+.imagenAserradero {
+  height: 40%;
+  width: 60%; }
+
+@media only screen and (min-width: 780px) {
+  .cuerpoQuienes {
+    height: 300px;
+    flex-direction: row;
+    margin-top: 2%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    line-height: 40PX; }
+  .parrafoQuienes {
+    height: 85%;
+    width: 40%;
+    text-align: justify; }
+  .imagenAserradero {
+    height: 85%;
+    width: 40%; }
+  .pageBottonQuienes {
+    margin-top: 3%; } }

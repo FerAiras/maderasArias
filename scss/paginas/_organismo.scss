@@ -1,0 +1,59 @@
+.bodyOrganismos {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "cuerpoOrganismos"
+    "pieOrganismos"
+    ;
+}
+
+.cuerpoOrganismos{
+    height: 90%;
+    width: 80%;
+    font-size: 16px;
+    background-color: #E6DA6D;
+    padding: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
+    grid-area: cuerpoOrganismos;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.pageBottonOrganismos{
+    background-color: #82E08D;
+    color: white;
+    grid-area: pieOrganismos;
+}
+.organismo{
+    height: 80%;
+    width: 80%;
+    border-bottom: black;
+    background-color: #E8E4BE;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapa{
+    display: none;
+}
+@media only screen and (min-width: 780px){
+
+    .cuerpoOrganismos{
+        margin-top: 2%;
+        font-size: 20px;
+    }
+    .organismo{
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .mapa{
+        display:flex;
+    }
+    .pageBottonOrganismos{
+        margin-top: 5%;
+    }
+}

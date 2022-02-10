@@ -1,3 +1,4 @@
+/* general */
 * {
     margin: 0 ;
     padding: 0 ;
@@ -51,7 +52,6 @@ body {
     border: 3px solid #E8E4BE;  /* creates padding around scroll thumb */
 }
 .imagenTronco {
-   /*  background-size: cover; */
     height: 40%;
     width: 60%; 
 }
@@ -72,7 +72,6 @@ body {
 .cuerpoContactos{
     height: 300%;
     width: 90%;
-/*     background-color: #E6DA6D; */
     padding: 1%;
     margin-top: 3%;
     margin-left: 2%;
@@ -86,7 +85,6 @@ body {
 }
 .pageBottonContacto{
     background-color: #82E08D;
-/*     color: white; */
     grid-area: pieContacto;
 }
 /* css organismos */
@@ -147,7 +145,23 @@ body {
     margin-top: 10%;
     grid-area: pieProductos;
 }
-
+.grillaProducto{
+   
+    margin: 2% 3% 2% 4%;
+}
+.filaTabla{
+    border:solid 1px black;
+}
+.bgVerde{
+    background-color: green;
+}
+.cBlanco {
+    color: white;
+}
+   
+.topContacto{
+    height: 23%;
+}
 
 /* css quienes */
 .bodyQuienes {
@@ -209,13 +223,13 @@ body {
      width: 60%; 
  }
  
+ /* general */
  .listaRedes {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     align-items:center;
     list-style: none;
-/*     height: 5vh; */
     flex-wrap: wrap;
 }
 footer ul li a {
@@ -224,26 +238,7 @@ footer ul li a {
 
 
 }
-/* a {
-    text-decoration: none;
-} */
 
-.grillaProducto{
-   
-    margin: 2% 3% 2% 4%;
-}
-.filaTabla{
-    border:solid 1px black;
-}
-.bgVerde{
-    background-color: green;
-}
-.cBlanco {
-    color: white;
-}   
-.topContacto{
-    height: 23%;
-}
 @media only screen and (min-width: 780px){
     .cuerpoInicio{
         height: 80%;
@@ -260,12 +255,11 @@ footer ul li a {
         height: 95%;
         width: 40%; 
     }
-/*     .pageTopInicio{
-        margin-top: 0;
-    } */
+
     .pageBottonInicio{
         margin-top: 3%;
         }
+        
     .pageBottonContacto{
         margin-top: 3%;
      }

@@ -1,0 +1,73 @@
+.bodyInicio {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "cuerpoIn"
+    "pie"
+    ;
+}
+
+.cuerpoInicio{
+    height: 500px;
+    width: 100%;
+    padding: 1%;
+    margin-top: 5%;
+    grid-area: cuerpoIn;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.parrafoInicio{
+    height: 40%;
+    width: 75%;
+    padding: 2%;
+    background-color: #E6DA6D;
+    font-size: 20px;
+    text-align:left;
+    line-height: 40PX;
+    font-style: italic;
+    color: black;
+    overflow-y: scroll;
+ }
+ .parrafoInicio::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+.parrafoInicio::-webkit-scrollbar-track {
+    background: #E6DA6D;        /* color of the tracking area */
+}
+.parrafoInicio::-webkit-scrollbar-thumb {
+    background-color: #F2C866;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #E8E4BE;  /* creates padding around scroll thumb */
+}
+.imagenTronco {
+    height: 40%;
+    width: 60%; 
+}
+.pageBottonInicio{
+    background-color: #82E08D;
+    grid-area: pie;
+}
+@media only screen and (min-width: 780px){
+    .cuerpoInicio{
+        height: 80%;
+        flex-direction: row;
+        margin-top: 2%;
+        justify-content: space-evenly;
+        align-items:center;
+    }
+    .parrafoInicio{
+        height: 70%;
+        width: 40%;
+    }
+    .imagenTronco {
+        height: 95%;
+        width: 40%; 
+    }
+
+    .pageBottonInicio{
+        margin-top: 3%;
+        }
+
+}

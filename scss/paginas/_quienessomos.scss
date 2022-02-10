@@ -1,0 +1,80 @@
+.bodyQuienes {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "cuerpoQuienes"
+    "pieQuienes"
+    ;
+}
+.pageTop{
+    background-color: #82E08D;
+    grid-area: cabecera;
+}
+.cuerpoQuienes{
+    height: 500px;
+    width: 100%;
+    padding: 1%;
+    margin-top: 5%;
+    grid-area: cuerpoQuienes;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.pageBottonQuienes{
+    background-color: #82E08D;
+    color: white;
+    grid-area: pieQuienes;
+}
+.parrafoQuienes {
+    height: 40%;
+    width: 80%;
+    padding: 2%;
+    background-color: #E6DA6D;
+    font-size: 20px;
+    text-align:left;
+    line-height: 30PX;
+    font-style: italic;
+    color: black;
+    overflow-y: scroll;
+}
+.parrafoQuienes::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+.parrafoQuienes::-webkit-scrollbar-track {
+    background: #E8E4BE;        /* color of the tracking area */
+  }
+  
+.parrafoQuienes::-webkit-scrollbar-thumb {
+    background-color: #F2C866;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #E8E4BE;  /* creates padding around scroll thumb */
+  }
+
+.imagenAserradero {
+     height: 40%;
+     width: 60%; 
+ }
+ @media only screen and (min-width: 780px){
+    .cuerpoQuienes{
+        height: 300px;
+        flex-direction: row;
+        margin-top: 2%;
+        justify-content: space-evenly;
+        align-items:flex-start;
+        line-height: 40PX;
+    }
+    .parrafoQuienes{
+        height: 85%;
+        width: 40%;
+        text-align: justify;
+    }
+    .imagenAserradero {
+         height: 85%;
+         width: 40%; 
+     }
+     .pageBottonQuienes{
+        margin-top: 3%;
+    }    
+ }

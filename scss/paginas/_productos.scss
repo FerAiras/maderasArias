@@ -1,0 +1,33 @@
+.bodyProductos {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "cuerpoProductos"
+    "pieProductos"
+    ;
+}
+
+.pageBottonProductos{
+    background-color: #82E08D;
+    color: white;
+    margin-top: 10%;
+    grid-area: pieProductos;
+}
+.grillaProducto{
+   
+    margin: 2% 3% 2% 4%;
+}
+.filaTabla{
+    border:solid 1px black;
+}
+.bgVerde{
+    background-color: green;
+}
+.cBlanco {
+    color: white;
+}
+@media only screen and (min-width: 780px){
+    .pageBottonProductos{
+        margin-top: 3%;
+    }    
+}   
