@@ -8,7 +8,7 @@
 }
 
 .cuerpoContactos{
-    height: 300%;
+    height: 100%;
     width: 90%;
     padding: 1%;
     margin-top: 3%;
@@ -21,32 +21,13 @@
 
 
 }
+
 .pageBottonContacto{
     background-color: #82E08D;
     grid-area: pieContacto;
 }
-.topContacto{
-    height: 23%;
-}
-.cuerpoInicio{
-        height: 80%;
-        flex-direction: row;
-        margin-top: 2%;
-        justify-content: space-evenly;
-        align-items:center;
-    }
-    .parrafoInicio{
-        height: 70%;
-        width: 40%;
-    }
-    .imagenTronco {
-        height: 95%;
-        width: 40%; 
-    }
 
-    .pageBottonInicio{
-        margin-top: 3%;
-        }
+
     @media only screen and (min-width: 780px){
     .pageBottonContacto{
             margin-top: 3%;
